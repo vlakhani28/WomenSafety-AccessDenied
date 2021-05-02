@@ -27,7 +27,7 @@ class Map1 {
             String url = "https://api.mapbox.com/directions/v5/mapbox/driving/" +
                 slong.toString() + "%2C" + slat.toString() + "%3B" +
                 dlong.toString() + "%2C" + dl.toString() +
-                "?alternatives=true&geometries=geojson&steps=true&access_token=pk.eyJ1Ijoidmxha2hhbmkyOCIsImEiOiJja25ybDY2Z20wdTVxMnBuenlnbmswaXUxIn0.c_HoVkK6jd5M0cJasWNJWA";
+                "?alternatives=true&geometries=geojson&steps=true&access_token=";
             print(url);
             http.Response response = await http.get(Uri.parse(url));
             Map values = jsonDecode(response.body);
